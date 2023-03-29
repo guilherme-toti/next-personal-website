@@ -5,6 +5,7 @@ import DevIcon from "@/app/icons/Dev";
 import LinkedIn from "@/app/icons/LinkedIn";
 import GitHub from "@/app/icons/GitHub";
 import Instagram from "@/app/icons/Instagram";
+import YouTube from "@/app/icons/YouTube";
 
 const ibmPlexMono = IBM_Plex_Mono({
     subsets: ["latin"],
@@ -53,6 +54,11 @@ export default function Home() {
                 <li>
                     <a href="https://www.linkedin.com/in/guilhermetoti/" title="LinkedIn">
                         <LinkedIn alt="LinkedIn" width={30} height={30} className={styles.icon}/>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/channel/UCCOFo8cOZk0vvwjmGG_1i2g" title="YouTube">
+                        <YouTube alt="YouTube" width={30} height={30} className={styles.icon}/>
                     </a>
                 </li>
                 <li>
