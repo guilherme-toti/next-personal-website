@@ -1,91 +1,71 @@
 import Image from 'next/image'
-import { Inter } from 'next/font/google'
+import {IBM_Plex_Mono} from 'next/font/google'
 import styles from './page.module.css'
+import DevIcon from "@/app/icons/Dev";
+import LinkedIn from "@/app/icons/LinkedIn";
+import GitHub from "@/app/icons/GitHub";
+import Instagram from "@/app/icons/Instagram";
 
-const inter = Inter({ subsets: ['latin'] })
+const ibmPlexMono = IBM_Plex_Mono({
+    subsets: ["latin"],
+    weight: ["400", "700"],
+})
 
 export default function Home() {
-  return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+    return (
+        <main className={`${styles.main} ${ibmPlexMono.className}`}>
+            <div className={styles.avatarContainer}>
+                <Image
+                    priority
+                    className={styles.avatar}
+                    src="/guilherme-toti-portrait.webp"
+                    alt="Guilherme Toti Profile Picture"
+                    width={150}
+                    height={150}
+                />
+            </div>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-        <div className={styles.thirteen}>
-          <Image src="/thirteen.svg" alt="13" width={40} height={31} priority />
-        </div>
-      </div>
+            <h1 className={styles.title}>Guilherme M. R. Toti</h1>
+            <p className={styles.role}>Lead Software Engineer @ Right Balance</p>
 
-      <div className={styles.grid}>
-        <a
-          href="https://beta.nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+            <p className={styles.description}>I'm a full-stack software developer with extensive experience in
+                Python
+                and React.JS.</p>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>Explore the Next.js 13 playground.</p>
-        </a>
+            <p className={styles.description}>As a lead software engineer, I have a proven track record of
+                delivering
+                high-quality projects on time and
+                within budget. My technical skills include front-end and back-end development, database design,
+                systems
+                architecture, and project management.</p>
+            <p className={styles.description}>I'm passionate about using technology to solve complex problems and
+                improve people's lives.</p>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+            <p className={styles.description}>Connect with me on social media to learn more about my work and
+                interests.</p>
+
+            <ul className={styles.socialList}>
+                <li>
+                    <a href="https://github.com/guilherme-toti" title="GitHub">
+                        <GitHub alt="GitHub" width={30} height={30} className={styles.icon}/>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/guilhermetoti/" title="LinkedIn">
+                        <LinkedIn alt="LinkedIn" width={30} height={30} className={styles.icon}/>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://dev.to/guilhermetoti" title="Dev.to">
+                        <DevIcon alt="Dev.to" width={30} height={30} className={styles.icon}/>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/guilherme.toti/" title="Instagram">
+                        <Instagram alt="Instagram" width={30} height={30} className={styles.icon}/>
+                    </a>
+                </li>
+            </ul>
+        </main>
+    )
 }
