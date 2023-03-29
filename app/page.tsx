@@ -28,7 +28,7 @@ export default function Home() {
             <h1 className={styles.title}>Guilherme M. R. Toti</h1>
             <p className={styles.role}>Lead Software Engineer @ Right Balance</p>
 
-            <p className={styles.description}>I'm a full-stack software developer with extensive experience in
+            <p className={styles.description}>I&apos;m a full-stack software developer with extensive experience in
                 Python
                 and React.JS.</p>
 
@@ -38,8 +38,8 @@ export default function Home() {
                 within budget. My technical skills include front-end and back-end development, database design,
                 systems
                 architecture, and project management.</p>
-            <p className={styles.description}>I'm passionate about using technology to solve complex problems and
-                improve people's lives.</p>
+            <p className={styles.description}>I&apos;m passionate about using technology to solve complex problems and
+                improve people&apos;s lives.</p>
 
             <p className={styles.description}>Connect with me on social media to learn more about my work and
                 interests.</p>
