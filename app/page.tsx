@@ -26,8 +26,8 @@ export default function Home() {
                 />
             </div>
 
-            <h1 className={styles.title}>Guilherme M. R. Toti</h1>
-            <p className={styles.role}>Lead Software Engineer @ Right Balance</p>
+            <h1 className={styles.title}>Guilherme Toti</h1>
+            <p className={styles.role}>Lead Software Engineer <span>@ Right Balance</span></p>
 
             <p className={styles.description}>I&apos;m a full-stack software developer with extensive experience in
                 Python

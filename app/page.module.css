@@ -32,6 +32,17 @@
     margin-bottom: 2rem;
 }
 
+.role,
+.title {
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .role span {
+        display: block;
+    }
+}
+
 .description {
     font-size: 16px;
     line-height: 26px;
